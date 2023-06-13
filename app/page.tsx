@@ -1,4 +1,9 @@
-import Image from 'next/image'
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+
+const Reflex = dynamic(() => import('../components/Reflex'), {
+  ssr: false
+})
 
 export default function Home() {
   return (
@@ -37,6 +42,10 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div>
+      <Reflex></Reflex>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
