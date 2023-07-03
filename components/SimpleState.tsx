@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { ImportHaskellComponent } from './Haskell';
 
 import { default as haskell } from './haskell/haskell-components.cabal';
 
