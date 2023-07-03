@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { default as haskell } from './haskell/haskell-components.cabal';
+import haskell from './haskell/haskell-components.cabal';
 
 export function SimpleStateTypescript() {
   const [v, setV] = useState(0);
