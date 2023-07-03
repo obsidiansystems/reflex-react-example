@@ -16,7 +16,7 @@
     "concurrently": "8.0.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "haskell-loader": "git+ssh://git@code.obsidian.systems/ryantrinkle/haskell-loader",
+    "next-haskell": "git+ssh://git@code.obsidian.systems/ryantrinkle/next-haskell",
     "next": "13.4.4",
     "postcss": "8.4.23",
     "react": "18.2.0",

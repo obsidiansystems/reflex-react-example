@@ -4,5 +4,5 @@
   "sha256": "054z7kw6pajjgh3sfpvfj605dk20s06djkvb5za3r8qvyw2n5sga",
   "private": true,
   "fetchSubmodules": false,
-  "branch": "webpack-loader-broken-nix"
+  "branch": "main"
 }
