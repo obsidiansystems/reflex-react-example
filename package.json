@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run next_dev\" \"touch asdf\"",
-    "next_dev": "next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,14 +13,15 @@
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "concurrently": "8.0.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "haskell-loader": "git+ssh://git@code.obsidian.systems/ryantrinkle/haskell-loader",
     "next": "13.4.4",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4",
-    "concurrently": "8.0.1"
+    "typescript": "5.0.4"
   }
 }

@@ -1,0 +1,13 @@
+packages: .
+allow-newer:
+  react-haskell:void,
+  ghcjs-base,
+  aeson,
+  attoparsec,
+  lens
+
+constraints:
+  --TODO: This should be pinned in reflex-platform
+  --TODO: Make sure to pin both of these
+  --hashable == 1.3.5.0,
+  aeson == 2.0.3.0
