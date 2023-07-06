@@ -32,5 +32,8 @@ executable reflex-react
     src
     src-exe
 
+  if !impl(ghcjs)
+    build-depends: jsaddle-warp
+
   default-language: Haskell2010
   ghc-options: -threaded -with-rtsopts=-N10
