@@ -1,7 +1,7 @@
 {
   "url": "ssh://git@code.obsidian.systems/ryantrinkle/reflex-react",
-  "rev": "cdcd1746bd8fb7b46460fd1f4b2de86c4f2fcede",
-  "sha256": "054z7kw6pajjgh3sfpvfj605dk20s06djkvb5za3r8qvyw2n5sga",
+  "rev": "0e9475dc4a888a5e649a18b9a45b3bb5b07f970c",
+  "sha256": "04x02jg1avlbyiz472ngz0cxxly4vb0knksyq5pz6yrd3crnhjwh",
   "private": true,
   "fetchSubmodules": false,
   "branch": "main"

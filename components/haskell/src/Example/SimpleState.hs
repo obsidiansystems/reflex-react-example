@@ -1,11 +1,4 @@
-{-# LANGUAGE RecursiveDo #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TypeApplications #-}
-{-# LANGUAGE ScopedTypeVariables #-}
-{-# OPTIONS_GHC -Wno-type-defaults #-}
 module Example.SimpleState where
-
-import Prelude hiding ((!!))
 
 import Language.Javascript.JSaddle hiding (Ref)
 import Control.Monad.Reader
@@ -16,14 +9,13 @@ import React
 import Reflex.React
 
 simpleStateHaskell :: ReaderT React JSM (Component JSVal ())
-simpleStateHaskell = component $ do
+simpleStateHaskell = component $ \_ -> do
   (v, setV) <- useState (0 :: Int)
-  onButton <- useCallback (\_ _ _ -> setV $ v + 1) (Just [toJSVal v])
-  pure $ \_ -> Render $ do
-    pure $ createFragment
-      [ createElement "button" ("onClick" =: onButton) ["+"]
-      , fromString $ show v
-      ]
+  increment <- useCallback (\_ _ _ -> setV (v + 1)) (Just [toJSVal v])
+  pure $ createFragment
+    [ createElement "button" ("onClick" =: increment) ["+"]
+    , fromString $ show v
+    ]
 
 simpleStateReflex :: ReaderT React JSM (Component JSVal ())
 simpleStateReflex = reflexComponent "div" valToJSON $ \_ -> do

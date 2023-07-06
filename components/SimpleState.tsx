@@ -1,14 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 import haskell from './haskell/haskell-components.cabal';
 
 export function SimpleStateTypescript() {
   const [v, setV] = useState(0);
+  const increment = useCallback(() => setV(v+1), [v]);
   return (
     <>
-      <button onClick={() => setV(v+1)} >+</button>
+      <button onClick={increment}>+</button>
       {v.toString()}
     </>
   );

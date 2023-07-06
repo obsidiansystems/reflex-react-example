@@ -7,7 +7,7 @@ category:           Web
 build-type:         Simple
 
 common warnings
-  ghc-options: -Wall -Wunused-packages
+  ghc-options: -Wall -Wunused-packages -Wno-type-defaults
 
 executable reflex-react
   import:           warnings
@@ -33,4 +33,6 @@ executable reflex-react
     src-exe
 
   default-language: Haskell2010
+  default-extensions:
+    OverloadedStrings
   ghc-options: -threaded -with-rtsopts=-N10
