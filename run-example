@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-nix-shell --run 'npm run dev'
+nix-shell --run 'npm install && npm run dev'
