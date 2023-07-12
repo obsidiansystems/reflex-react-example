@@ -1,7 +1,0 @@
-{
-  "url": "ssh://git@code.obsidian.systems/ryantrinkle/react",
-  "rev": "aea4f3b654ad528443e39762cd772c030323644a",
-  "sha256": "0rh7skvm0lbpv9ggwm5ipqsx9hdm58h22vns7j8vi7n6361mkpc0",
-  "private": false,
-  "fetchSubmodules": false
-}

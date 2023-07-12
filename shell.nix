@@ -4,5 +4,6 @@ with nixpkgs;
 mkShell {
   buildInputs = [
     nodejs
+    ghcid
   ];
 }
