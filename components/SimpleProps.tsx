@@ -2,7 +2,11 @@
 
 import haskell from './haskell/haskell-components.cabal';
 
-export function SimplePropsTypescript(props) {
+interface IProps {
+    v: number;
+};
+
+export function SimplePropsTypescript(props: IProps) {
   return (
     <>
       {JSON.stringify(props)}
