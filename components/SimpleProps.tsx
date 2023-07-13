@@ -1,5 +1,6 @@
 'use client';
 
+// @ts-ignore
 import haskell from './haskell/haskell-components.cabal';
 
 interface IProps {
