@@ -26,11 +26,11 @@ export default function Test() {
 
       <TabPanel>
         <h2>Typescript</h2>
-        <div><SimpleStateTypescript v={v} /></div>
+        <div><SimpleStateTypescript /></div>
         <h2>Haskell</h2>
-        <div><SimpleStateHaskell v={v} /></div>
+        <div><SimpleStateHaskell /></div>
         <h2>Reflex</h2>
-        <div><SimpleStateReflex v={v} /></div>
+        <div><SimpleStateReflex /></div>
       </TabPanel>
     </Tabs>
   )

@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 
+// @ts-ignore
 import haskell from './haskell/haskell-components.cabal';
 
 export function SimpleStateTypescript() {
