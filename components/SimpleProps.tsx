@@ -1,7 +1,5 @@
 'use client';
 
-import { useProps } from 'react';
-
 import haskell from './haskell/haskell-components.cabal';
 
 export function SimplePropsTypescript(props) {
